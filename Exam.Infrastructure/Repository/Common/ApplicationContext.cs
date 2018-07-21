@@ -14,6 +14,10 @@ namespace Exam.Infrastructure.Repository.Common
 
         public virtual DbSet<StudentPreGrado> StudentsPregrado { get; set; }
 
+        public virtual DbSet<StudentMaestria> StudentsMaestria { get; set; }
+
+        public virtual DbSet<StudentDoctorado> StudentsDoctorado{ get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Student>().ToTable("students")
